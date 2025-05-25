@@ -4,22 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - David Etheridge</title>
-    <link rel="stylesheet" href="src/css/about.css">    
+    <link rel="stylesheet" href="src/css/about.css">
+    <link rel="stylesheet" href="src/css/nav.css">
     <link rel="stylesheet" href="src/css/footer.css">
-
+    <link rel="icon" href="src/assets/favicon.png" type="image/png">
 </head>
 <body>
-    <header>
+    <header id="main-header">
         <div class="logo">
             <h1><a href="index.html" style="text-decoration: none; color: inherit;">David Etheridge</a></h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="band.html">Band Instruments</a></li>
-                <li><a href="stringed.html">Stringed Instruments</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <button class="nav-toggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul id="main-nav">
+                    <li><a href="band.html">Band Instruments</a></li>
+                    <li><a href="stringed.html">Stringed Instruments</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="nav-overlay"></div>
+        </div>
     </header>
 
     <main>
@@ -59,9 +70,11 @@
                 </ul>
             </div>
             <div class="footer-attribution">
-                <p>Designed by <a href="https://github.com/torinriley" target="_blank">Torin Riley</a></p>
+                <p>Website by <a href="https://github.com/torinriley" target="_blank">Torin Riley</a></p>
             </div>
         </div>
     </footer>
+    <script src="src/js/scroll-animation.js"></script>
+    <script src="src/js/nav.js"></script>
 </body>
 </html>
