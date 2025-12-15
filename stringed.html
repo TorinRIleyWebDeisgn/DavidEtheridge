@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="src/css/stringed.css">
     <link rel="stylesheet" href="src/css/nav.css">
     <link rel="stylesheet" href="src/css/footer.css">
-    <link rel="stylesheet" href="src/css/carousel.css">
     <link rel="icon" href="src/assets/favicon.png" type="image/png">
 </head>
 <body>
     <header id="main-header">
         <div class="logo">
-            <h1><a href="index.html" style="text-decoration: none; color: inherit;">David Etheridge</a></h1>
+            <h1><a href="index.html" >David Etheridge</a></h1>
         </div>
         <div class="nav-container">
             <button class="nav-toggle" aria-label="Toggle Navigation">
@@ -34,77 +33,130 @@
         </div>
     </header>
     <main>
-        <section class="intro fade-in">
-            <h2>Stringed Instrument Services</h2>
-            <p>Expert repairs for violins, guitars, cellos, and other stringed instruments. We bring decades of experience and a passion for music to every instrument we work on.</p>
-        </section>
-        <section id="services" class="section">
-            <h3>Stringed Instrument Services</h3>
-            <div class="services-container">
-            <div class="service-card">
-                <h4>Custom Stringed Instruments</h4>
-                <p>Handcrafted stringed instruments designed to meet your unique style and tone preferences.</p>
-                <a href="mailto:info@davidetheridge.com?subject=Custom Stringed Instruments Inquiry" class="service-link">Inquire Now</a>
+        <section class="string-hero fade-in">
+            <div class="string-hero__content">
+                <p class="eyebrow">Custom builds & restoration</p>
+                <h2>Handcrafted stringed instruments voiced for players, not production lines.</h2>
+                <p class="lead">From new mandolins and archtops to restorative neck resets and bespoke inlay work, every instrument receives full documentation and hands-on voicing.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="contact.html">Start a commission</a>
+                    <a class="btn btn-ghost" href="#gallery">View recent builds</a>
+                </div>
             </div>
-            <div class="service-card">
-                <h4>Instrument Repairs</h4>
-                <p>Comprehensive repair services for violins, guitars, cellos, and more to restore their original quality.</p>
-                <a href="mailto:info@davidetheridge.com?subject=Instrument Repairs Inquiry" class="service-link">Inquire Now</a>
-            </div>
-            <div class="service-card">
-                <h4>Setup & Adjustments</h4>
-                <p>Expert setup and adjustments to ensure optimal playability and performance.</p>
-                <a href="mailto:info@davidetheridge.com?subject=Setup & Adjustments Inquiry" class="service-link">Inquire Now</a>
-            </div>
-            <div class="service-card">
-                <h4>Custom Inlay Work</h4>
-                <p>Intricate custom inlay designs to personalize your instrument, handcrafted to perfection.</p>
-                <a href="mailto:info@davidetheridge.com?subject=Custom Inlay Work Inquiry" class="service-link">Inquire Now</a>
-            </div>
+            <div class="string-hero__panel">
+                <div>
+                    <span class="metric__value">25 yrs</span>
+                    <span class="metric__label">luthiery experience</span>
+                </div>
+                <div>
+                    <span class="metric__value">Tap-tuned</span>
+                    <span class="metric__label">tops & braces</span>
+                </div>
+                <div>
+                    <span class="metric__value">1-on-1</span>
+                    <span class="metric__label">player fittings</span>
+                </div>
             </div>
         </section>
-        <section id="inlay-work" class="section">
-            <h3>Custom Inlay Work</h3>
-            <p>Personalize your instrument with intricate custom inlay designs, handcrafted to perfection. From fretboards to headstocks, we bring your vision to life.</p>
+
+        <section id="services" class="section-card fade-in">
+            <div class="section-heading">
+                <p class="eyebrow">What I craft + restore</p>
+                <h3>Complete care for guitars, violins, mandolins, and unique builds.</h3>
+            </div>
+            <div class="service-grid">
+                <article class="service-card">
+                    <h4>Custom builds</h4>
+                    <p>One-off guitars, mandolins, and lap steels voiced for your repertoire with tapped tops, hand-carved plates, and curated tonewood sets.</p>
+                    <ul>
+                        <li>Tap-tuned tops & bracing</li>
+                        <li>Premium tonewood library</li>
+                        <li>Hand-rubbed finishes</li>
+                    </ul>
+                </article>
+                <article class="service-card">
+                    <h4>Restoration & repair</h4>
+                    <p>Neck resets, crack repair, refrets, and structural stabilization for vintage pieces needing a second life on stage.</p>
+                    <ul>
+                        <li>Neck resets & joint work</li>
+                        <li>Crack cleats & humidity control</li>
+                        <li>Refrets & nut/saddle fabrication</li>
+                    </ul>
+                </article>
+                <article class="service-card">
+                    <h4>Performance setups</h4>
+                    <p>Dialed-in action, electronics, and ergonomic adjustments so each instrument responds effortlessly to your touch.</p>
+                    <ul>
+                        <li>Precision fret dressing</li>
+                        <li>Pickup installs & shielding</li>
+                        <li>Alternate tunings + setups</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="craft-grid fade-in">
+            <div class="craft-text">
+                <p class="eyebrow">Custom inlay & detail work</p>
+                <h3>Architectural lines, organic materials, and heirloom detailing.</h3>
+                <p>From fretboards to headstocks, I collaborate on motifs, materials, and proportions—balancing hand-cut artistry with modern stability techniques.</p>
+                <ul class="checklist">
+                    <li>Mother-of-pearl, abalone, and exotic hardwood inlays</li>
+                    <li>Hand-scraped bindings and purfling</li>
+                    <li>On-request build journals with progress photos</li>
+                </ul>
+                <a class="btn btn-secondary" href="contact.html">Discuss custom detail</a>
+            </div>
             <div class="inlay-gallery">
-                <div class="inlay-item">
+                <figure>
                     <img src="src/assets/inlay1.jpg" alt="Custom Inlay 1">
-                    <p>Green abalone in honduran mahagony</p>
-                </div>
-                <div class="inlay-item">
+                    <figcaption>Green abalone set into Honduran mahogany.</figcaption>
+                </figure>
+                <figure>
                     <img src="src/assets/inlay2.jpg" alt="Custom Inlay 2">
-                    <p>Floral inlay design in green abalone on banjo headstock</p>
-                </div>
-                <div class="inlay-item">
-                    <img src="src/assets/inlay3.jpg" alt="Custom Inlay 2">
-                    <p>Fretboard inlay in green abalone on handcrafted lap steel guitar</p>
-                </div>
-                <div class="inlay-item">
-                    <img src="src/assets/inlay4.jpg" alt="Custom Inlay 2">
-                    <p>Headstock inlay in white and gold mother of pearl on handrafted mandolin</p>
-                </div>
+                    <figcaption>Floral headstock inlay on a custom banjo.</figcaption>
+                </figure>
+                <figure>
+                    <img src="src/assets/inlay3.jpg" alt="Custom Inlay 3">
+                    <figcaption>Lap steel fretboard inlay sequence.</figcaption>
+                </figure>
+                <figure>
+                    <img src="src/assets/inlay4.jpg" alt="Custom Inlay 4">
+                    <figcaption>Mother-of-pearl mandolin crest detail.</figcaption>
+                </figure>
             </div>
         </section>
-        <section id="faq" class="section">
-            <h3>Frequently Asked Questions</h3>
-            <div class="faq-container">
-            <div class="faq-item">
-                <h4>What materials do you use for custom inlays?</h4>
-                <p>We use high-quality materials such as mother of pearl, abalone, and exotic woods for our inlays. Each material is carefully selected to ensure durability and aesthetic appeal.</p>
+
+        <section id="faq" class="faq-section fade-in">
+            <div class="section-heading left">
+                <p class="eyebrow">FAQ</p>
+                <h3>What players ask before commissioning.</h3>
             </div>
-            <div class="faq-item">
-                <h4>How long does a custom inlay job take?</h4>
-                <p>The timeframe depends on the complexity of the design. Most inlays take 2–4 weeks to complete. We provide regular updates throughout the process to keep you informed of the progress.</p>
-            </div>
-            <div class="faq-item">
-                <h4>Do you offer repair warranties?</h4>
-                <p>Yes, we provide a 1-year warranty on all repairs and custom work. This warranty covers any defects in materials or workmanship, giving you peace of mind with your investment.</p>
-            </div>
+            <div class="faq-grid">
+                <article class="faq-card">
+                    <h4>Inlay materials</h4>
+                    <p>Mother-of-pearl, abalone, exotic woods, and custom composites are all hand-cut and sealed for longevity.</p>
+                </article>
+                <article class="faq-card">
+                    <h4>Build timelines</h4>
+                    <p>New commissions vary 4–8 months depending on complexity; restoration timelines are quoted after evaluation.</p>
+                </article>
+                <article class="faq-card">
+                    <h4>Warranty</h4>
+                    <p>Every repair and build includes a one-year warranty covering workmanship and setup support.</p>
+                </article>
+                <article class="faq-card">
+                    <h4>Remote clients</h4>
+                    <p>Detailed progress photos, video updates, and insured shipping make it simple to collaborate across borders.</p>
+                </article>
             </div>
         </section>
-        <section id="gallery" class="section">
-            <h3>Gallery</h3>
-            <p>Explore one of our finest handcrafted stringed instruments.</p>
+
+        <section id="gallery" class="string-gallery fade-in">
+            <div class="section-heading">
+                <p class="eyebrow">Featured build</p>
+                <h3>Handcrafted mandolin, documented stage by stage.</h3>
+            </div>
             <div class="gallery-container">
                 <div class="carousel">
                     <div class="carousel-container">
@@ -123,22 +175,28 @@
                         <img src="src/assets/mando/13.jpg" alt="Mandolin View 13" class="carousel-image">
                         <img src="src/assets/mando/14.jpg" alt="Mandolin View 14" class="carousel-image">
                     </div>
-                    <button class="carousel-button prev">❮</button>
-                    <button class="carousel-button next">❯</button>
+                    <button class="carousel-button prev" aria-label="Previous image">❮</button>
+                    <button class="carousel-button next" aria-label="Next image">❯</button>
                 </div>
+                <div class="carousel-dots" aria-label="carousel progress"></div>
                 <div class="instrument-details">
-                    <h2>Mandolin Specifications</h2>
+                    <h4>Mandolin specifications</h4>
                     <ul>
-                        <li>Spruce soundboard [Picea sitchensis]</li>
-                        <li>Maple back and sides [Acer sacharum]</li>
-                        <li>Ebony fretboard and fittings [Diospryus crassiflora]</li>
-                        <li>Gold plated hardware</li>
-                        <li>Medium fretwire</li>
-                        <li>13.875" scale length</li>
-                        <li>Made in 2018</li>
+                        <li>Spruce top, maple back and sides</li>
+                        <li>Ebony board, custom inlays, gold hardware</li>
+                        <li>13.875" scale, medium fretwire</li>
+                        <li>Documented build completed 2018</li>
                     </ul>
                 </div>
             </div>
+        </section>
+
+        <section class="string-cta fade-in">
+            <div>
+                <p class="eyebrow">Ready when you are</p>
+                <h3>Book a fitting or begin a new custom chapter.</h3>
+            </div>
+            <a class="btn btn-primary" href="contact.html">Plan your build</a>
         </section>
     </main>
     <footer id="site-footer">
@@ -152,12 +210,12 @@
                 </ul>
             </div>
             <div class="footer-attribution">
-                <p>Website by <a href="https://github.com/torinriley" target="_blank">Torin Riley</a></p>
+                <p>Website by <a href="https://github.com/torinriley" target="_blank">Torin Etheridge</a></p>
             </div>
         </div>
     </footer>
     <script src="src/js/scroll-animation.js"></script>
-    <script src="src/js/faq2.js"></script>
     <script src="src/js/carousel.js"></script>
+    <script src="src/js/nav.js"></script>
 </body>
 </html>

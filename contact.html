@@ -13,7 +13,7 @@
 <body>
     <header id="main-header">
         <div class="logo">
-            <h1><a href="index.html" style="text-decoration: none; color: inherit;">David Etheridge</a></h1>
+            <h1><a href="index.html" >David Etheridge</a></h1>
         </div>
         <div class="nav-container">
             <button class="nav-toggle" aria-label="Toggle Navigation">
@@ -34,46 +34,76 @@
         </div>
     </header>
     <main>
-        <section class="intro fade-in">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to us for any inquiries or further information.</p>
+        <section class="contact-hero fade-in">
+            <div class="contact-hero__content">
+                <p class="eyebrow">Let's talk</p>
+                <h2>Reserve bench time, start a build, or schedule a school visit.</h2>
+                <p class="lead">Send a note through the form, email directly, or call the workshop line. Every inquiry receives a response within one business day.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#contact-panel">Start a project</a>
+                    <a class="btn btn-ghost" href="tel:+18023335957">Call +1 (802) 333‑5957</a>
+                </div>
+            </div>
+            <div class="contact-details">
+                <div>
+                    <span class="label">Workshop</span>
+                    <p>Central Vermont (by appointment)</p>
+                </div>
+                <div>
+                    <span class="label">Email</span>
+                    <p><a href="mailto:davidetheridge2112@gmail.com">davidetheridge2112@gmail.com</a></p>
+                </div>
+                <div>
+                    <span class="label">Phone</span>
+                    <p><a href="tel:+18023335957">+1 (802) 333‑5957</a></p>
+                </div>
+                <div>
+                    <span class="label">Availability</span>
+                    <p>Mon–Fri · 9a–6p EST</p>
+                </div>
+            </div>
         </section>
 
-        <section id="contact" class="section">
-            <h3>Contact Us</h3>
-            <p>Have a question or need more information? Use the form below to get in touch, and we'll get back to you as soon as possible.</p>
+        <section id="contact-panel" class="contact-panel fade-in">
+            <div class="panel-info">
+                <p class="eyebrow">Contact form</p>
+                <h3>Tell me about your instrument.</h3>
+                <p>Include the make/model, current condition, and timeline. Attachments and follow-up photos can be sent after this initial message.</p>
+                <ul class="checklist">
+                    <li>Formspree-secured submissions</li>
+                    <li>Responses within 24 hours</li>
+                    <li>Rush repairs welcome</li>
+                </ul>
+            </div>
             <form id="contact-form" action="https://formspree.io/f/xqaagdrb" method="POST" class="contact-form">
-                <label for="email">Your Email:</label>
-                <input type="email" name="email" id="email" placeholder="Enter your email" required>
-        
-                <label for="message">Your Message:</label>
-                <textarea name="message" id="message" placeholder="Write your message here" rows="5" required></textarea>
-        
-                <div class="button-container">
-                    <button type="submit">
-                        <div class="svg-wrapper-1">
-                            <div class="svg-wrapper">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    width="24"
-                                    height="24"
-                                >
-                                    <path fill="none" d="M0 0h24v24H0z"></path>
-                                    <path
-                                        fill="currentColor"
-                                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                                    ></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <span>Send</span>
-                    </button>
-                </div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="you@email.com" required>
+
+                <label for="phone">Phone (optional)</label>
+                <input type="tel" name="phone" id="phone" placeholder="+1 (___) ___-____">
+
+                <label for="timeline">Timeline</label>
+                <select name="timeline" id="timeline">
+                    <option value="flexible">Flexible</option>
+                    <option value="next-30">Within 30 days</option>
+                    <option value="rush">Rush / ASAP</option>
+                </select>
+
+                <label for="message">Project details</label>
+                <textarea name="message" id="message" placeholder="Share instrument details, issues, and goals." rows="5" required></textarea>
+
+                <label class="checkbox">
+                    <input type="checkbox" name="newsletter" value="yes">
+                    <span>Keep me posted about new builds & availability.</span>
+                </label>
+
+                <button type="submit" class="btn btn-primary submit-btn">Send message</button>
+                <div id="form-response" class="form-response hidden">Thank you for your message! We'll get back to you soon.</div>
             </form>
-            <div id="form-response" class="hidden">Thank you for your message! We'll get back to you soon.</div>
         </section>
-       
     </main>
     <footer id="site-footer">
         <div class="footer-container">
@@ -86,7 +116,7 @@
                 </ul>
             </div>
             <div class="footer-attribution">
-                <p>Website by <a href="https://github.com/torinriley" target="_blank">Torin Riley</a></p>
+                <p>Website by <a href="https://github.com/torinriley" target="_blank">Torin Etheridge</a></p>
             </div>
         </div>
     </footer>

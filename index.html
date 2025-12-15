@@ -33,69 +33,192 @@
         </div>
     </header>
     <main>
-        <section class="intro fade-in">
-            <h2>David Etheridge</h2>
-            <p>Professional Band Instrument Repair and Custom Stringed Instruments</p>
-        </section>
-        <section id="about-section" class="fade-in">
-            <div class="about-container">
-                <div class="about-content">
-                    <h3>About David</h3>
-                    <p>
-                        I am passionate about music and craftsmanship. 
-                        I specialize in providing high-quality repairs, custom instruments, and expert 
-                        maintenance services to help musicians bring their vision to life.
+        <section class="hero fade-in">
+            <div class="hero__grid">
+                <div class="hero__content">
+                    <p class="eyebrow">Precision repair & bespoke builds</p>
+                    <h2>Modern restoration for instruments that work as hard as you do.</h2>
+                    <p class="lead">
+                        I partner with touring pros, schools, and dedicated hobbyists to keep their instruments in peak shape—
+                        from complete brass overhauls to boutique stringed builds voiced for your style.
                     </p>
-                    <p>
-                        From custom stringed instruments to routine maintenance, I am committed to 
-                        ensuring every note you play sounds perfect.
-                    </p>
-                    <a href="about.html" class="learn-more-link">Learn More</a>
+                    <div class="hero__actions">
+                        <a class="btn btn-primary" href="contact.html">Book a bench slot</a>
+                        <a class="btn btn-ghost" href="stringed.html">Explore custom builds</a>
+                    </div>
+                    <div class="hero__metrics">
+                        <div class="metric">
+                            <span class="metric__value">25+</span>
+                            <span class="metric__label">years in repair</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric__value">800+</span>
+                            <span class="metric__label">instruments serviced yearly</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric__value">48 hr</span>
+                            <span class="metric__label">average turnaround</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-image">
-                    <img src="src/assets/placeholder.jpg" alt="About us placeholder image">
+                <div class="hero__visual">
+                    <img src="src/assets/instrument1.jpg" alt="Instrument repair bench" loading="lazy">
+                    <div class="hero__card">
+                        <p>Popular requests</p>
+                        <ul>
+                            <li>clean & polish</li>
+                            <li>Pad + cork replacement</li>
+                            <li>Custom neck resets</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <section class="trusted fade-in">
+            <p class="eyebrow">Trusted by ensembles across the region</p>
+            <div class="logo-row">
+                <span>Touring Pros</span>
+                <span>Regional Orchestras</span>
+                <span>School Programs</span>
+                <span>Studio Players</span>
+            </div>
+        </section>
+
         <section id="instrument-services" class="fade-in">
-            <h3>Services</h3>
-            <div class="service-container">
-                <div class="service">
-                    <div class="service-text">
-                        <h4>Brass Instrument Repair</h4>
-                        <p>
-                            We provide expert repair services for brass instruments, ensuring they produce the best possible sound and performance.
-                        </p>
-                    </div>
+            <div class="section-heading">
+                <p class="eyebrow">What I work on</p>
+                <h3>Comprehensive care for brass, woodwind, and stringed instruments.</h3>
+                <p>
+                    Purpose-built service plans keep your instrument responsive, reliable, and ready for the next show or rehearsal.
+                </p>
+            </div>
+            <div class="service-grid">
+                <article class="service-card">
+                    <div class="service-card__icon">01</div>
+                    <h4>Brass overhauls</h4>
+                    <p>Precision dent work, valve alignments, soldering, and refinishing that restore projection and feel.</p>
+                    <ul>
+                        <li>Silver & lacquer refreshes</li>
+                        <li>Leadpipe fabrication</li>
+                        <li>Custom trigger installs</li>
+                    </ul>
                     <a href="band.html" class="service-link">
-                        <span>Learn More</span>
+                        <span>Discover brass services</span>
                         <img src="src/assets/arrow_up.svg" alt="arrow icon" class="arrow-icon">
                     </a>
-                </div>
-                <div class="service">
-                    <div class="service-text">
-                        <h4>Woodwind Instrument Repair</h4>
-                        <p>
-                            Our professional repair services for woodwind instruments guarantee optimal sound quality and playability.
-                        </p>
-                    </div>
+                </article>
+                <article class="service-card">
+                    <div class="service-card__icon">02</div>
+                    <h4>Woodwind optimization</h4>
+                    <p>Complete pad work, tone-hole refacing, and ergonomic adjustments for effortless response.</p>
+                    <ul>
+                        <li>Pisoni & Straubinger pad sets</li>
+                        <li>Corkwork & key regulation</li>
+                        <li>Crack stabilization</li>
+                    </ul>
                     <a href="band.html" class="service-link">
-                        <span>Learn More</span>
+                        <span>See woodwind options</span>
                         <img src="src/assets/arrow_up.svg" alt="arrow icon" class="arrow-icon">
                     </a>
-                </div>
-                <div class="service">
-                    <div class="service-text">
-                        <h4>Stringed Instrument Repair</h4>
-                        <p>
-                            We offer comprehensive repair services for stringed instruments, ensuring they are in perfect playing condition.
-                        </p>
-                    </div>
+                </article>
+                <article class="service-card">
+                    <div class="service-card__icon">03</div>
+                    <h4>Custom stringed builds</h4>
+                    <p>Bespoke guitars, mandolins, and restoration-ready violins carved, voiced, and set up for your sound.</p>
+                    <ul>
+                        <li>Tap-tuned tops & braces</li>
+                        <li>Premium tonewood library</li>
+                        <li>Performance setups</li>
+                    </ul>
                     <a href="stringed.html" class="service-link">
-                        <span>Learn More</span>
+                        <span>View stringed work</span>
                         <img src="src/assets/arrow_up.svg" alt="arrow icon" class="arrow-icon">
                     </a>
+                </article>
+            </div>
+        </section>
+
+        <section class="craft fade-in">
+            <div class="craft__grid">
+                <div class="craft__image">
+                    <img src="src/assets/guitare-inside.jpg" alt="Handcrafted stringed instrument interior" loading="lazy">
                 </div>
+                <div class="craft__content">
+                    <p class="eyebrow">Built with intention</p>
+                    <h3>Every repair and build is documented, photographed, and shared with you at each milestone.</h3>
+                    <p>
+                        Expect transparent communication, timelines, and post-service support. I treat each instrument like it’s headed back on stage tonight.
+                    </p>
+                    <ul class="checklist">
+                        <li>Detailed diagnostics before bench work begins</li>
+                        <li>Modern tooling paired with hand-fit craftsmanship</li>
+                        <li>Climate-controlled curing and storage</li>
+                        <li>Playable sample recordings upon pickup</li>
+                    </ul>
+                    <a class="btn btn-secondary" href="gallery.html">Browse recent builds</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="location-info fade-in">
+            <div class="location__content">
+                <p class="eyebrow">Where to find me</p>
+                <h3>Located in Central Vermont</h3>
+                <p>
+                    The Etheridge Instruments workshop is tucked in central Vermont, serving touring artists, schools,
+                    and players across New England with courier and mail-in options for anything beyond driving distance.
+                </p>
+                <a class="btn btn-secondary" href="contact.html">Plan a visit</a>
+            </div>
+            <div class="location__details">
+                <div>
+                    <span class="label">Service radius</span>
+                    <span class="value">VT • NH • NY • MA</span>
+                </div>
+                <div>
+                    <span class="label">Drop-offs</span>
+                    <span class="value">By appointment only</span>
+                </div>
+                <div>
+                    <span class="label">Mail-in repairs</span>
+                    <span class="value">Shipping both ways</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="process fade-in">
+            <div class="section-heading">
+                <p class="eyebrow">A clear process</p>
+                <h3>From first call to final polish, you always know what happens next.</h3>
+            </div>
+            <div class="process__steps">
+                <article class="step">
+                    <span class="step__index">01</span>
+                    <h4>Intake & diagnostics</h4>
+                    <p>Photo documentation and full play-test to map issues and outline the recommended scope.</p>
+                </article>
+                <article class="step">
+                    <span class="step__index">02</span>
+                    <h4>Bench time</h4>
+                    <p>Handcrafted repairs with progress updates, sound clips, and timeline transparency.</p>
+                </article>
+                <article class="step">
+                    <span class="step__index">03</span>
+                    <h4>Setups & delivery</h4>
+                    <p>Fine-tuned setups, protective finishes, and aftercare notes so your instrument stays dialed.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="cta-panel fade-in">
+            <div class="cta__content">
+                <h3>Ready to <span class="highlight-accent">hear</span> the difference?</h3>
+                <p>Contact me to reserve repair time or start a new custom commission.</p>
+            </div>
+            <div class="cta__actions">
+                <a class="btn btn-primary" href="contact.html">Book appointment</a>
+                <a class="btn btn-ghost" href="gallery.html">View gallery</a>
             </div>
         </section>
     </main>
@@ -110,7 +233,7 @@
                 </ul>
             </div>
             <div class="footer-attribution">
-                <p>Website by <a href="https://github.com/torinriley" target="_blank">Torin Riley</a></p>
+                <p>Website by <a href="https://github.com/torinriley" target="_blank">Torin Etheridge</a></p>
             </div>
         </div>
     </footer>

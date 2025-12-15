@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainNav = document.querySelector('#main-nav');
     const navOverlay = document.querySelector('.nav-overlay');
     const header = document.querySelector('#main-header');
+    let lastScrollY = window.scrollY;
 
     // Toggle mobile menu
     function toggleNav() {
@@ -35,11 +36,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Header shrinking on scroll
     function handleScroll() {
-        if (window.scrollY > 50) {
+        const currentScroll = window.scrollY;
+
+        if (currentScroll > 50) {
             header.classList.add('header-scrolled');
         } else {
             header.classList.remove('header-scrolled');
         }
+
+        const scrollingDown = currentScroll > lastScrollY;
+        const shouldHide = scrollingDown && currentScroll > 120 && !document.body.classList.contains('nav-open');
+
+        if (shouldHide) {
+            header.classList.add('header-hidden');
+        } else {
+            header.classList.remove('header-hidden');
+        }
+
+        lastScrollY = currentScroll;
     }
 
     // Add scroll event listener

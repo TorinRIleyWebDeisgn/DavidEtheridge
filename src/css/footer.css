@@ -2,7 +2,8 @@
     background-color: var(--dark-bg);
     color: white;
     padding: 4rem 2rem;
-    margin-top: 4rem;
+    margin-top: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer-container {

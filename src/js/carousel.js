@@ -1,10 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
     const carousel = document.querySelector('.carousel');
+    if (!carousel) return;
     const images = carousel.querySelectorAll('.carousel-image');
     const prevButton = carousel.querySelector('.prev');
     const nextButton = carousel.querySelector('.next');
+    const dotsContainer = carousel.querySelector('.carousel-dots');
     let currentIndex = 0;
     let isTransitioning = false;
+    let dots = [];
+
+    if (dotsContainer) {
+        dots = Array.from(images).map((_, index) => {
+            const dot = document.createElement('button');
+            dot.classList.add('carousel-dot');
+            dot.type = 'button';
+            dot.setAttribute('aria-label', `Go to slide ${index + 1}`);
+            dot.addEventListener('click', () => {
+                currentIndex = index;
+                showImage(currentIndex);
+            });
+            dotsContainer.appendChild(dot);
+            return dot;
+        });
+    }
 
     function showImage(index) {
         if (isTransitioning) return;
@@ -18,6 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Add active class to new image
         images[index].classList.add('active');
+        if (dots.length) {
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[index].classList.add('active');
+        }
 
         // Reset transition flag after animation completes
         setTimeout(() => {
